@@ -1,0 +1,7 @@
+@use "../utils/mixins" as *;
+@use "../variables/colors" as *;
+
+.btn {
+  padding: 0.5rem 1.5rem;
+  @include button-styles($primary, $secondary);
+}

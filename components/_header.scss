@@ -1,0 +1,6 @@
+@use "../variables/colors" as *;
+@use "../utils/mixins" as *;
+
+.header {
+  @include flexContainer(center, center, 1rem);
+}

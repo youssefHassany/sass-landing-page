@@ -1,0 +1,30 @@
+@mixin flexContainer(
+  $justify-content,
+  $align-items,
+  $gap: 0,
+  $flex-direction: "row"
+) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  gap: $gap;
+  flex-direction: $flex-direction;
+}
+
+@mixin button-styles($bg-color, $text-color) {
+  background-color: $bg-color;
+  color: $text-color;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: solid 2px $text-color;
+  border-radius: 1rem;
+  display: block;
+  width: fit-content;
+  text-decoration: none;
+  transition: all 300ms;
+
+  &:hover {
+    background-color: $text-color;
+    color: $bg-color;
+  }
+}
